@@ -16,7 +16,7 @@ server.use(express.urlencoded({ extended:true }));
 server.use(express.static(path.join(__dirname, '../public')));
 server.use(router);
 
-server.use((req,res) => {
+server.use((req, res) => {
     res.status(404).render('pages/404');
 })
 
